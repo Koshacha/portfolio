@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-display: swap;
+  font-family: RocketFont;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/rocket.woff2) format("woff2"), url(/fonts/rocket.woff) format("woff")
+}
+
+@layer base {
+  .glitch {
+    @apply flex
+  }
+}
