@@ -43,11 +43,11 @@
 
 <style lang="postcss">
   :global(body) {
-    @apply antialiased max-w-2xl mb-20 flex flex-col md:flex-row mx-4 mt-8 mx-auto bg-night text-white;
+    @apply antialiased max-w-2xl mb-20 flex flex-col md:flex-row mt-8 mx-auto bg-night text-white;
   }
 
   .container {
-    @apply flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0;
+    @apply flex-auto min-w-0 md:mt-6 flex flex-col px-4 md:px-0;
   }
 
   .bottom-bar {
