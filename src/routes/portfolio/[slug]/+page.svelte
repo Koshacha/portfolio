@@ -31,10 +31,7 @@
   </div>
 </article>
 
-<style>
-  .post {
-  }
-
+<style lang="postcss">
   .post__cover {
     @apply w-full sm:bg-gradient-to-t from-night from-25% to-neutral-800 h-28 border-neutral-800 sm:border-2 mb-6 sm:mb-12 relative;
   }

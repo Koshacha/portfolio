@@ -30,7 +30,7 @@
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
   .filter {
     @apply flex flex-row flex-wrap gap-1 items-center justify-center mb-4;
   }

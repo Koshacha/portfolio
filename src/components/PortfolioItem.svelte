@@ -18,6 +18,7 @@
 </script>
 
 {#if post && loaded}
+  <!-- svelte-ignore a11y-no-static-element-interactions -->
   <div
     transition:fly={{ y: -20 }}
     class={classname}

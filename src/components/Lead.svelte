@@ -28,6 +28,6 @@
   }
 
   .text {
-    @apply prose prose-invert leading-6 font-sans mb-3;
+    @apply text-neutral-300/90 leading-6 font-sans mb-3;
   }
 </style>

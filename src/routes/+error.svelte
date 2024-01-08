@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .not-found {
     @apply flex items-center justify-center flex-col h-96;
   }

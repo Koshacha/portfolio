@@ -9,6 +9,7 @@
   import { page } from '$app/stores';
   import JobStatus from '../components/JobStatus.svelte';
   config.autoAddCss = false;
+  import * as globalConfig from '$lib/config';
 
   export let data;
 
@@ -22,6 +23,10 @@
     });
   });
 </script>
+
+<svelte:head>
+  <title>{globalConfig.title}</title>
+</svelte:head>
 
 <div class="container">
   <Header />

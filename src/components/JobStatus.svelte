@@ -21,7 +21,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .marque {
     @apply flex overflow-x-hidden bg-reseda_green;
   }

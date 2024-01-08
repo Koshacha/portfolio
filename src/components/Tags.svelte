@@ -23,7 +23,7 @@
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
   .tags {
     @apply flex flex-col-reverse justify-center items-center;
   }
