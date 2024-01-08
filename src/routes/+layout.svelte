@@ -38,7 +38,7 @@
     {/key}
   </main>
   {#if $page.url.pathname === '/'}
-    <div class="bottom-bar" in:fly={{ y: 200, duration: 1000 }}>
+    <div class="top-bar" in:fly={{ y: -100, duration: 800 }} out:fly={{ y: -50, duration: 1200 }}>
       <JobStatus />
     </div>
   {:else if footerShown}
@@ -55,7 +55,7 @@
     @apply flex-auto min-w-0 md:mt-6 flex flex-col px-4 md:px-0;
   }
 
-  .bottom-bar {
-    @apply fixed bottom-0 left-0 right-0;
+  .top-bar {
+    @apply fixed top-0 left-0 right-0;
   }
 </style>

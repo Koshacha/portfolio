@@ -27,14 +27,14 @@
   }
 
   .marque__row {
-    @apply md:py-5 animate-marquee whitespace-nowrap;
+    @apply animate-marquee whitespace-nowrap;
   }
 
   .marque__row--copy {
-    @apply absolute top-0 md:py-5 animate-marquee2 whitespace-nowrap;
+    @apply absolute top-0 animate-marquee2 whitespace-nowrap;
   }
 
   .marque__item {
-    @apply text-sm md:text-4xl mx-5 font-rocket;
+    @apply text-sm mx-5 font-rocket;
   }
 </style>
