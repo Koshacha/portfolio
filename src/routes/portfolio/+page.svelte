@@ -24,9 +24,15 @@
 <Portfolio>
   <PortfolioFilter items={categories} bind:selectedItems={selected} />
 
-  <div class="flex flex-col w-full sm:grid sm:grid-cols-6 sm:gap-4">
+  <div class="portfolio">
     {#each filteredPosts as post, index}
       <PortfolioItem type={index < 2 ? 'wide' : 'small'} {index} {post} />
     {/each}
   </div>
 </Portfolio>
+
+<style lang="postcss">
+  .portfolio {
+    @apply flex flex-col w-full sm:grid sm:grid-cols-6 sm:gap-4;
+  }
+</style>

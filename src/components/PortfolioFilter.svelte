@@ -21,7 +21,7 @@
         if (selectedItems.includes(item)) {
           selectedItems = selectedItems.filter((o) => o !== item);
         } else {
-          selectedItems = [...selectedItems, item];
+          selectedItems = [item];
         }
       }}
     >
