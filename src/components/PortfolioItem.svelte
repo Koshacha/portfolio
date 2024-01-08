@@ -8,7 +8,7 @@
 
   setTimeout(() => {
     loaded = true;
-  }, index * 125);
+  }, index * 150);
 
   let loaded = false;
   let hovered = false;
@@ -18,6 +18,7 @@
 </script>
 
 {#if post && loaded}
+  <!-- svelte-ignore a11y-no-static-element-interactions -->
   <div
     transition:fly={{ y: -20 }}
     class={classname}
@@ -40,9 +41,15 @@
           {linkText}
         </a>
         {#if hovered}
-          <a href="portfolio/{post.slug}" class="card__button" in:fly={{ y: 10 }}>
-            {linkText}
-          </a>
+          {#if post.wip}
+            <span class="card__button card__button--disabled" in:fly={{ y: 10 }}>
+              currently in progress
+            </span>
+          {:else}
+            <a href="portfolio/{post.slug}" class="card__button" in:fly={{ y: 10 }}>
+              {linkText}
+            </a>
+          {/if}
         {/if}
       </div>
     </div>
@@ -74,8 +81,12 @@
     @apply absolute bottom-2 right-4 text-xs font-medium text-celadon font-rocket invisible sm:visible;
 
     &:before {
-      @apply content-['>'];
+      @apply content-[''];
     }
+  }
+
+  .card__button--disabled {
+    @apply cursor-not-allowed text-reseda_green;
   }
 
   .card__button.card__button--mobile {

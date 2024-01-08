@@ -1,9 +1,13 @@
 <script lang="ts">
+  import analyzeDate, { type DateInfo } from '$lib/utils/analyzeDate';
+
   // import { formatDate } from '$lib/utils';
 
   import Tags from '../../../components/Tags.svelte';
 
   export let data;
+
+  // let date: DateInfo | undefined = data.meta.date ? analyzeDate(data.meta.date) : undefined;
 </script>
 
 <!-- SEO -->
@@ -17,11 +21,16 @@
   <div class="post__cover">
     <hgroup>
       <h1 class="post__heading">{data.meta.title}</h1>
-      <!--      <p class="post__meta">Published at {data.meta.date}</p>-->
+      <!-- {#if date}
+        <div class="post__date">
+          <div class="post__year">{date.year}</div>
+          <div class="post__season" title={date.season}>{date.seasonEmoji}</div>
+        </div>
+      {/if} -->
     </hgroup>
   </div>
 
-  <div class="prose prose-invert">
+  <div class="prose prose-invert max-w-full">
     <div class="post__tags">
       {#if data.meta?.stack?.length > 0}
         <Tags items={data.meta.stack} />
@@ -31,10 +40,7 @@
   </div>
 </article>
 
-<style>
-  .post {
-  }
-
+<style lang="postcss">
   .post__cover {
     @apply w-full sm:bg-gradient-to-t from-night from-25% to-neutral-800 h-28 border-neutral-800 sm:border-2 mb-6 sm:mb-12 relative;
   }

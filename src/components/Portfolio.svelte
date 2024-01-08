@@ -5,7 +5,7 @@
   <slot />
 </div>
 
-<style>
+<style lang="postcss">
   .portfolio {
     @apply w-full;
   }

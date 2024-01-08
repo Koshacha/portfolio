@@ -16,7 +16,7 @@
     <FontAwesomeIcon class="text-neutral-300 w-6 !h-3" icon={faLink} />
     {text}
   {:else}
-    <FontAwesomeIcon class="w-4 !h-5 mr-2" {icon} />
+    <FontAwesomeIcon class="w-4 !h-5 mr-1" {icon} />
   {/if}
 </a>
 
@@ -27,6 +27,6 @@
   }
 
   .button_with-icon {
-    @apply transition-colors duration-300;
+    @apply transition-colors duration-300 mt-1;
   }
 </style>

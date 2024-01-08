@@ -7,7 +7,7 @@
   <div class="not-found__text">so I will update the content soon</div>
 </div>
 
-<style>
+<style lang="postcss">
   .not-found {
     @apply flex items-center justify-center flex-col h-96;
   }
