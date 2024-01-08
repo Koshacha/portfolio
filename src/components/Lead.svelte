@@ -1,5 +1,6 @@
 <script>
   import Contacts from './Contacts.svelte';
+  let duolingoDays = 198;
 </script>
 
 <div class="lead">
@@ -9,7 +10,12 @@
     Hey there, let's team up to build awesome apps together! I'm eager to become a player in your
     venture, bringing my expertise to the table. I look forward to fruitful cooperation.
   </p>
-  <p class="text">Contact me so we can discuss your project as soon as possible.</p>
+  <p class="text">
+    If you're not sure yet, I've been learning Spanish with Duolingo for <span class="combo"
+      >{duolingoDays}</span
+    >
+    days straight and I'm proud of it. Contact me so we can discuss your project as soon as possible.
+  </p>
   <Contacts />
 </div>
 
@@ -29,5 +35,9 @@
 
   .text {
     @apply text-neutral-300/90 leading-6 font-sans mb-3;
+  }
+
+  .combo {
+    @apply font-rocket text-reseda_green;
   }
 </style>

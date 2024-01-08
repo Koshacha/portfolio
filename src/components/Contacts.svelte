@@ -2,12 +2,11 @@
   import Link from './Link.svelte';
   import { type IconDefinition } from '@fortawesome/free-regular-svg-icons';
 
-  import { faEnvelope, faAt } from '@fortawesome/free-solid-svg-icons';
-  import { faGithub, faGithubAlt, faTelegram } from '@fortawesome/free-brands-svg-icons';
+  import { faAt } from '@fortawesome/free-solid-svg-icons';
+  import { faDiscord, faGithubAlt, faTelegram } from '@fortawesome/free-brands-svg-icons';
 
   type LinkWithIcon = {
     icon: IconDefinition;
-    hoverIcon?: IconDefinition;
     href: string;
   };
 
@@ -24,18 +23,19 @@
     [
       {
         href: 'https://t.me/Koshacha',
-        icon: faTelegram,
-        hoverIcon: faTelegram
+        icon: faTelegram
       },
       {
         href: 'mailto:wuvuxd@proton.me',
-        icon: faAt,
-        hoverIcon: faAt
+        icon: faAt
+      },
+      {
+        href: 'https://discordapp.com/users/316173966827978755',
+        icon: faDiscord
       },
       {
         href: 'https://github.com/Koshacha',
-        icon: faGithubAlt,
-        hoverIcon: faGithubAlt
+        icon: faGithubAlt
       }
     ],
     [
