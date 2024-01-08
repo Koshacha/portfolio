@@ -8,7 +8,7 @@
   <h2 class="title">ilya mazunin</h2>
   <p class="text">
     Hey there, let's team up to build awesome apps together! I'm eager to become a player in your
-    venture, bringing my expertise to the table. I look forward to fruitful cooperation.
+    venture, bringing my expertise to the table. I love cats and absolutely adore TypeScript.
   </p>
   <p class="text">
     If you're not sure yet, I've been learning Spanish with Duolingo for <span class="combo"

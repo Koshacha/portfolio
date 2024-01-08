@@ -4,7 +4,7 @@
 
 <div class="silly-cat">
   <!-- <h4 class="silly-cat__title">today's cat of the day</h4> -->
-  <img class="silly-cat__gif" src="/maxwell-cat.gif" />
+  <img alt="maxwell cat spinning" class="silly-cat__gif" src="/maxwell-cat.webp" loading="lazy" />
 </div>
 
 <style type="postcss">
