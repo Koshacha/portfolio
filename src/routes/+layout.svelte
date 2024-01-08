@@ -1,6 +1,6 @@
 <script>
   import '../app.css';
-  import { scale, fade } from 'svelte/transition';
+  import { scale, fade, fly } from 'svelte/transition';
   import Header from '../components/Header.svelte';
   import Footer from '../components/Footer.svelte';
   import { onMount } from 'svelte';
@@ -33,7 +33,9 @@
     {/key}
   </main>
   {#if $page.url.pathname === '/'}
-    <JobStatus />
+    <div class="bottom-bar" in:fly={{ y: 200, duration: 1000 }}>
+      <JobStatus />
+    </div>
   {:else if footerShown}
     <Footer />
   {/if}
@@ -46,5 +48,9 @@
 
   .container {
     @apply flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0;
+  }
+
+  .bottom-bar {
+    @apply fixed bottom-0 left-0 right-0;
   }
 </style>
