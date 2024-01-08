@@ -1,11 +1,16 @@
 <script>
   let strings = new Array(7).fill('currently looking for a job');
+  let glitchedElementIndex = 3;
 </script>
 
 <div class="marque">
   <div class="marque__row">
-    {#each strings as str}
-      <span class="marque__item">{str}</span>
+    {#each strings as str, index}
+      {#if index === glitchedElementIndex}
+        <span class="marque__item glitch" data-text={str}>{str}</span>
+      {:else}
+        <span class="marque__item">{str}</span>
+      {/if}
     {/each}
   </div>
 

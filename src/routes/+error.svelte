@@ -3,7 +3,9 @@
 
 <div class="not-found">
   <div class="not-found__numbers">404</div>
-  <div class="not-found__text">there is nothing to see here</div>
+  <div class="not-found__text glitch" data-text="there is nothing to see here">
+    there is nothing to see here
+  </div>
 </div>
 
 <style>
