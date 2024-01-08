@@ -21,6 +21,10 @@
       : posts;
 </script>
 
+<svelte:head>
+  <title>Portfolio</title>
+</svelte:head>
+
 <Portfolio>
   <PortfolioFilter items={categories} bind:selectedItems={selected} />
 
