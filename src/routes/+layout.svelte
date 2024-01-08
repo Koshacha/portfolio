@@ -24,10 +24,6 @@
   });
 </script>
 
-<svelte:head>
-  <title>{globalConfig.title}</title>
-</svelte:head>
-
 <div class="container">
   <Header />
   <main class="main">

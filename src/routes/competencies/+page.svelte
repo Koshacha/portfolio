@@ -1,6 +1,10 @@
 <script>
 </script>
 
+<svelte:head>
+  <title>Competencies & Skills</title>
+</svelte:head>
+
 <div class="not-found">
   <div class="not-found__numbers">wip</div>
   <div class="not-found__text">section of the site is under development</div>

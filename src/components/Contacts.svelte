@@ -34,7 +34,7 @@
         icon: faDiscord
       },
       {
-        href: 'https://github.com/Koshacha',
+        href: 'https://github.com/koshacha',
         icon: faGithubAlt
       }
     ],
