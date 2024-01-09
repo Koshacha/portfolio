@@ -5,12 +5,13 @@
   export let post: Post | undefined = undefined;
   export let type: 'small' | 'wide' = 'small';
   export let index = 0;
+  export let animate = true;
 
   setTimeout(() => {
     loaded = true;
   }, index * 150);
 
-  let loaded = false;
+  let loaded = !animate;
   let hovered = false;
   let linkVariants = ['open', 'check', 'let`s see', 'checkout', 'go', 'read more'];
   $: linkText = sample(linkVariants);

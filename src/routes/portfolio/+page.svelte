@@ -1,7 +1,4 @@
 <script lang="ts">
-  // import { t } from '$lib/translations';
-  // import { formatDate } from '$lib/utils';
-  import * as config from '$lib/config';
   import Portfolio from '../../components/Portfolio.svelte';
   import PortfolioItem from '../../components/PortfolioItem.svelte';
   import PortfolioFilter from '../../components/PortfolioFilter.svelte';
@@ -11,11 +8,17 @@
   let { posts, categories } = data.data;
   let selected: string[] = [];
 
+  let animate = true;
+
+  $: {
+    if (selected.length > 0) animate = false;
+  }
+
   $: filteredPosts =
     selected.length > 0
-      ? posts.filter((o) => {
-          return o.categories.some((a) => {
-            return selected.includes(a);
+      ? posts.filter((post) => {
+          return post.categories.some((category) => {
+            return selected.includes(category);
           });
         })
       : posts;
@@ -29,8 +32,8 @@
   <PortfolioFilter items={categories} bind:selectedItems={selected} />
 
   <div class="portfolio">
-    {#each filteredPosts as post, index}
-      <PortfolioItem type={index < 2 ? 'wide' : 'small'} {index} {post} />
+    {#each filteredPosts as post, index (post.slug)}
+      <PortfolioItem {animate} type={index < 2 ? 'wide' : 'small'} {index} {post} />
     {/each}
   </div>
 </Portfolio>

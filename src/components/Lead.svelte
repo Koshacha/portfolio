@@ -1,6 +1,6 @@
 <script>
   import Contacts from './Contacts.svelte';
-  let duolingoDays = 198;
+  import Duolingo from './Duolingo.svelte';
 </script>
 
 <div class="lead">
@@ -11,9 +11,7 @@
     venture, bringing my expertise to the table. I love cats and absolutely adore TypeScript.
   </p>
   <p class="text">
-    If you're not sure yet, I've been learning Spanish with Duolingo for <span class="combo"
-      >{duolingoDays}</span
-    >
+    If you're not sure yet, I've been learning Spanish with Duolingo for <Duolingo />
     days straight and I'm proud of it. Contact me so we can discuss your project as soon as possible.
   </p>
   <Contacts />
@@ -35,9 +33,5 @@
 
   .text {
     @apply text-neutral-300/90 leading-6 font-sans mb-3;
-  }
-
-  .combo {
-    @apply font-rocket text-reseda_green;
   }
 </style>

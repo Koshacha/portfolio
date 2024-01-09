@@ -10,6 +10,10 @@
   src: url(/fonts/rocket.woff2) format("woff2"), url(/fonts/rocket.woff) format("woff")
 }
 
+::selection {
+  @apply bg-reseda_green-500 text-white
+}
+
 @layer base {
   .glitch {
     position: relative;
