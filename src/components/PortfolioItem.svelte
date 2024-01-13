@@ -3,7 +3,6 @@
   import type { Post } from '$lib/types';
   import sample from 'lodash.sample';
   export let post: Post | undefined = undefined;
-  export let type: 'small' | 'wide' = 'small';
   export let index = 0;
   export let animate = true;
 
@@ -15,57 +14,42 @@
   let hovered = false;
   let linkVariants = ['open', 'check', 'let`s see', 'checkout', 'go', 'read more'];
   $: linkText = sample(linkVariants);
-  $: classname = type === 'small' ? 'card' : 'card card__wide';
 </script>
 
 {#if post && loaded}
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <div
+    class="card__inner"
     transition:fly={{ y: -20 }}
-    class={classname}
     on:mouseenter={() => (hovered = true)}
     on:mouseleave={() => (hovered = false)}
   >
-    <div class="card__inner">
-      <div class="card__body">
-        <div class="flex items-center -mt-1">
-          <h3 class="card__title">{post.title}</h3>
-        </div>
-        <p class="card__description">
-          {post.description}
-        </p>
-        <a
-          href="portfolio/{post.slug}"
-          class="card__button card__button--mobile"
-          in:fly={{ y: 10 }}
-        >
-          {linkText}
-        </a>
-        {#if hovered}
-          {#if post.wip}
-            <span class="card__button card__button--disabled" in:fly={{ y: 10 }}>
-              currently in progress
-            </span>
-          {:else}
-            <a href="portfolio/{post.slug}" class="card__button" in:fly={{ y: 10 }}>
-              {linkText}
-            </a>
-          {/if}
-        {/if}
+    <div class="card__body">
+      <div class="flex items-center -mt-1">
+        <h3 class="card__title">{post.title}</h3>
       </div>
+      <p class="card__description">
+        {post.description}
+      </p>
+      <a href="portfolio/{post.slug}" class="card__button card__button--mobile" in:fly={{ y: 10 }}>
+        {linkText}
+      </a>
+      {#if hovered}
+        {#if post.wip}
+          <span class="card__button card__button--disabled" in:fly={{ y: 10 }}>
+            currently in progress
+          </span>
+        {:else}
+          <a href="portfolio/{post.slug}" class="card__button" in:fly={{ y: 10 }}>
+            {linkText}
+          </a>
+        {/if}
+      {/if}
     </div>
   </div>
 {/if}
 
 <style lang="postcss">
-  .card {
-    @apply w-full mb-5 sm:mb-0 col-span-2;
-  }
-
-  .card.card__wide {
-    @apply col-span-3;
-  }
-
   .card__body {
     @apply relative h-full p-5 bg-night-300/30 border-[1px] border-neutral-700 hover:border-celadon/50 rounded-sm;
   }
