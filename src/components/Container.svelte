@@ -13,7 +13,7 @@
 
 <style lang="postcss">
   .wrapper {
-    @apply container mx-auto;
+    @apply max-w-2xl mx-4 lg:mx-auto;
   }
 
   .wrapper--fluid {

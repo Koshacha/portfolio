@@ -2,13 +2,16 @@
   import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
   import { faHeart as icon } from '@fortawesome/free-solid-svg-icons';
   import { fly } from 'svelte/transition';
+  import Container from './Container.svelte';
 </script>
 
 <footer class="footer" in:fly={{ y: 50 }} out:fly={{ y: 50 }}>
-  <div class="text">
-    made with <FontAwesomeIcon class="text-[#ff6962] w-4 h-4" {icon} /> on
-    <span></span> svelte
-  </div>
+  <Container>
+    <div class="text">
+      made with <FontAwesomeIcon class="text-[#ff6962] w-4 h-4" {icon} /> on
+      <span></span> svelte
+    </div>
+  </Container>
 </footer>
 
 <style lang="postcss">

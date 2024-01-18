@@ -43,11 +43,11 @@
 
 <style lang="postcss">
   .menu {
-    @apply flex flex-row flex-wrap gap-4 mb-3 lg:mb-6;
+    @apply flex flex-row flex-wrap gap-4 my-3 mt-6 lg:mt-10 lg:mb-6;
   }
 
   .item {
-    @apply transition-all;
+    @apply transition-all py-2;
 
     &:before {
       @apply content-['#'] mr-0.5 text-tea_green align-middle;

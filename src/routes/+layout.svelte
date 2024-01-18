@@ -10,6 +10,7 @@
   import JobStatus from '../components/JobStatus.svelte';
   config.autoAddCss = false;
   import * as globalConfig from '$lib/config';
+  import Container from '../components/Container.svelte';
 
   export let data;
 
@@ -24,31 +25,27 @@
   });
 </script>
 
-<div class="container">
-  <Header />
-  <main class="main">
-    {#key data.url}
+<Header />
+<main class="main">
+  {#key data.url}
+    <Container fluid={$page.data.wideLayout}>
       <div in:scale={{ duration: 400, delay: 200, start: 1.05 }} out:fade={{ duration: 200 }}>
         <slot />
       </div>
-    {/key}
-  </main>
-  {#if $page.url.pathname === '/'}
-    <div class="top-bar" in:fly={{ y: -100, duration: 800 }} out:fly={{ y: -50, duration: 1200 }}>
-      <JobStatus />
-    </div>
-  {:else if footerShown}
-    <Footer />
-  {/if}
-</div>
+    </Container>
+  {/key}
+</main>
+{#if $page.url.pathname === '/'}
+  <div class="top-bar" in:fly={{ y: -100, duration: 800 }} out:fly={{ y: -50, duration: 1200 }}>
+    <JobStatus />
+  </div>
+{:else if footerShown}
+  <Footer />
+{/if}
 
 <style lang="postcss">
   :global(body) {
-    @apply antialiased max-w-2xl mb-20 flex flex-col md:flex-row mt-8 mx-auto bg-night text-white;
-  }
-
-  .container {
-    @apply flex-auto min-w-0 md:mt-6 flex flex-col px-4 md:px-0;
+    @apply antialiased bg-night text-white;
   }
 
   .top-bar {
