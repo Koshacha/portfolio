@@ -1,0 +1,115 @@
+{
+  "frontend": [
+    {
+      "name": "TypeScript",
+      "img": "/images/skills/ts.png"
+    },
+    {
+      "name": "HTML5",
+      "img": "/images/skills/html.png"
+    },
+    {
+      "name": "CSS3",
+      "img": "/images/skills/css.png"
+    },
+    {
+      "name": "React.js",
+      "img": "/images/skills/react-js.png"
+    },
+    {
+      "name": "Redux",
+      "img": "/images/skills/redux.png"
+    },
+    {
+      "name": "MobX",
+      "img": "/images/skills/mobx.png"
+    },
+    {
+      "name": "Svelte",
+      "img": "/images/skills/svelte.png"
+    },
+    {
+      "name": "Gulp",
+      "img": "/images/skills/gulp.png"
+    },
+    {
+      "name": "Vite",
+      "img": "/images/skills/vite.png"
+    },
+    {
+      "name": "Webpack",
+      "img": "/images/skills/webpack.svg"
+    },
+    {
+      "name": "SASS/SCSS",
+      "img": "/images/skills/sass.png"
+    },
+    {
+      "name": "Tailwind CSS",
+      "img": "/images/skills/tailwind.png"
+    },
+    {
+      "name": "styled components",
+      "img": "/images/skills/styled-components.webp"
+    },
+    {
+      "name": "Pug (Jade)",
+      "img": "/images/skills/pug.svg"
+    }
+  ],
+  "backend": [
+    {
+      "name": "Node.js",
+      "img": "/images/skills/node-js.png"
+    },
+    {
+      "name": "Nest.js",
+      "img": "/images/skills/nest-js.svg"
+    },
+    {
+      "name": "Express",
+      "img": "/images/skills/express.png"
+    }
+  ],
+  "soft": [],
+  "learning": [
+    {
+      "name": "React Native",
+      "img": "/images/skills/react-js.png"
+    },
+    {
+      "name": "FastAPI",
+      "img": "/images/skills/fastapi.svg"
+    },
+    {
+      "name": "Vue",
+      "img": "/images/skills/vue.png"
+    },
+    {
+      "name": "d3.js",
+      "img": "/images/skills/d3.webp"
+    }
+  ],
+  "devops": [
+    {
+      "name": "Git",
+      "img": "/images/skills/git.png"
+    },
+    {
+      "name": "Docker",
+      "img": "/images/skills/docker.png"
+    },
+    {
+      "name": "Docker Compose",
+      "img": "/images/skills/docker-compose.png"
+    },
+    {
+      "name": "Jest",
+      "img": "/images/skills/jest.png"
+    },
+    {
+      "name": "Vercel",
+      "img": "/images/skills/vercel.jpeg"
+    }
+  ]
+}

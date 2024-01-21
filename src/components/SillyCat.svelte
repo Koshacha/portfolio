@@ -1,5 +1,5 @@
 <script>
-  import sample from 'lodash.sample';
+  // import sample from 'lodash.sample';
 </script>
 
 <div class="silly-cat">
@@ -10,10 +10,6 @@
 <style type="postcss">
   .silly-cat {
     @apply flex items-center justify-center mt-20;
-  }
-
-  .silly-cat__title {
-    @apply relative;
   }
 
   .silly-cat__gif {

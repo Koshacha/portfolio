@@ -1,26 +1,49 @@
-<script>
+<script lang="ts">
+  import SkillsSection from '../../components/SkillsSection.svelte';
+
+  export let data;
+
+  let { skills } = data;
 </script>
 
 <svelte:head>
   <title>Competencies & Skills</title>
 </svelte:head>
 
-<div class="not-found">
-  <div class="not-found__numbers">wip</div>
-  <div class="not-found__text">section of the site is under development</div>
-  <div class="not-found__text">so I will update the content soon</div>
+<div class="max-w-4xl mx-auto">
+  <div class="flex flex-col gap-2 mb-20 md:mb-0 md:grid md:grid-cols-3 md:gap-3 md:mx-3">
+    <div class="col-span-2">
+      <SkillsSection items={skills.frontend}>
+        <span slot="title">frontend</span>
+      </SkillsSection>
+    </div>
+    <!-- <div class="row-span-3">
+      <SkillsSection items={skills.soft}>
+        <span slot="title">soft skills</span>
+      </SkillsSection>
+    </div> -->
+    <div class="row-span-3 -order-10 md:order-[unset]">
+      <SkillsSection items={skills.learning}>
+        <span slot="title">things I'm learning</span>
+        <span slot="text">
+          Studying popular tools that I might have missed before. Right now I am also interested in
+          <a href="https://web3js.readthedocs.io/en/v1.10.0/" rel="nofollow">Web3</a> and I think that
+          in the future I will try to explore this technology as well.
+        </span>
+      </SkillsSection>
+    </div>
+    <div class="col-span-2">
+      <SkillsSection items={skills.backend}>
+        <span slot="title">backend</span>
+      </SkillsSection>
+    </div>
+    <div class="col-span-2">
+      <SkillsSection items={skills.devops}>
+        <span slot="title">devops</span>
+      </SkillsSection>
+    </div>
+  </div>
 </div>
 
 <style lang="postcss">
-  .not-found {
-    @apply flex items-center justify-center flex-col h-96;
-  }
-
-  .not-found__numbers {
-    @apply text-reseda_green font-sans text-8xl;
-  }
-
-  .not-found__text {
-    @apply text-neutral-200 font-rocket text-xl text-center;
-  }
 </style>

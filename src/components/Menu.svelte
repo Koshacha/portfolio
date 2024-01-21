@@ -56,14 +56,13 @@
 
   .active {
     @apply transition-all origin-left;
-    &:before {
-      @apply content-['!'] text-cambridge_blue align-baseline;
-    }
   }
 
-  .back {
-    &:before {
-      @apply content-['q:'] text-cambridge_blue align-baseline;
-    }
+  .active::before {
+    @apply content-['!'] text-cambridge_blue align-baseline;
+  }
+
+  .back::before {
+    @apply content-['q:'] text-cambridge_blue align-baseline;
   }
 </style>

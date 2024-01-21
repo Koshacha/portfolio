@@ -64,10 +64,10 @@
 
   .card__button {
     @apply absolute bottom-2 right-4 text-xs font-medium text-celadon font-rocket invisible sm:visible;
+  }
 
-    &:before {
-      @apply content-[''];
-    }
+  .card__button::before {
+    @apply content-[''];
   }
 
   .card__button--disabled {
