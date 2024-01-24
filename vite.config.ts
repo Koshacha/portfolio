@@ -3,5 +3,10 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [sveltekit(), ViteImageOptimizer()]
+  plugins: [
+    sveltekit(),
+    ViteImageOptimizer({
+      exclude: /\.webp$/i
+    })
+  ]
 });

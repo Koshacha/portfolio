@@ -29,7 +29,7 @@
 <main class="main">
   {#key data.url}
     <Container fluid={$page.data.wideLayout}>
-      <div in:scale={{ duration: 400, delay: 200, start: 1.05 }} out:fade={{ duration: 200 }}>
+      <div in:scale={{ duration: 400, delay: 205, start: 1.05 }} out:fade={{ duration: 200 }}>
         <slot />
       </div>
     </Container>
