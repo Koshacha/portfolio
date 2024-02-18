@@ -12,3 +12,10 @@ export type Post = {
   colspan?: boolean;
   rowspan?: boolean;
 };
+
+export type Tech = {
+  name: string;
+  img: string;
+};
+
+export type Skills = Record<string, Tech[]>;

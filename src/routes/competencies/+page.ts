@@ -1,9 +1,6 @@
-import type { Load } from '@sveltejs/kit';
-import skills from '$lib/consts/skills.json';
+export async function load({ fetch }) {
+  const response = await fetch('api/skills');
+  const { skills } = await response.json();
 
-export const load: Load = () => {
-  return {
-    skills,
-    wideLayout: true
-  };
-};
+  return { skills, wideLayout: true };
+}
