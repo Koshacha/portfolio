@@ -9,15 +9,11 @@
 </script>
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<div
-  class="icon group"
-  on:mouseenter={() => (hovered = true)}
-  on:mouseleave={() => (hovered = false)}
->
+<div class="icon" on:mouseenter={() => (hovered = true)} on:mouseleave={() => (hovered = false)}>
   {#if hovered}
     <Pop>{title}</Pop>
   {/if}
-  <Image class="icon__img" alt={title} {src}>
+  <Image class="icon__img {hovered ? 'icon__img__hovered' : ''}" alt={title} {src}>
     <div slot="suspense" class="icon__img--skeleton"></div>
   </Image>
 </div>
@@ -28,7 +24,11 @@
   }
 
   .icon :global(.icon__img) {
-    @apply h-9 w-9 object-contain grayscale-[0.6] group-hover:grayscale-0;
+    @apply h-9 w-9 object-contain grayscale-[0.6];
+  }
+
+  .icon :global(.icon__img__hovered) {
+    @apply grayscale-0;
   }
 
   .icon__img--skeleton {
