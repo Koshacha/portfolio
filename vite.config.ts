@@ -1,12 +1,7 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { imagetools } from 'vite-imagetools';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [
-    sveltekit(),
-    ViteImageOptimizer({
-      exclude: /\.webp$/i
-    })
-  ]
+  plugins: [sveltekit(), imagetools()]
 });
