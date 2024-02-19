@@ -30,7 +30,7 @@
 
 <style lang="postcss">
   .cover {
-    @apply absolute md:flex flex-row-reverse flex-wrap items-center justify-center overflow-hidden left-0 top-0 bottom-0 right-0 pointer-events-none;
+    @apply absolute hidden md:flex flex-row-reverse flex-wrap items-center justify-center overflow-hidden left-0 top-0 bottom-0 right-0 pointer-events-none;
   }
 
   .cover__emoji {
