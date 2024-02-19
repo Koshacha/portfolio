@@ -37,6 +37,6 @@
   }
 
   .link {
-    @apply text-cambridge_blue-400 font-borel leading-none;
+    @apply text-cambridge_blue-400 font-borel leading-none whitespace-nowrap;
   }
 </style>
