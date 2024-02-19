@@ -24,7 +24,7 @@
   }
 
   .subtitle {
-    @apply mb-2 text-xs font-semibold tracking-wide uppercase font-sans;
+    @apply md:mb-2 text-xs font-semibold tracking-wide uppercase font-sans;
   }
 
   .title {

@@ -75,6 +75,6 @@
   }
 
   .contacts__group {
-    @apply flex items-center gap-4 flex-wrap mb-3 first:md:mr-4;
+    @apply flex items-center gap-3 md:gap-4 flex-wrap mb-3 first:md:mr-4;
   }
 </style>

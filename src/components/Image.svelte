@@ -13,14 +13,19 @@
     img.src = src;
     loading = true;
 
-    img.onload = () => {
+    if (img.complete) {
       loading = false;
       loaded = true;
-    };
-    img.onerror = () => {
-      loading = false;
-      failed = true;
-    };
+    } else {
+      img.onload = () => {
+        loading = false;
+        loaded = true;
+      };
+      img.onerror = () => {
+        loading = false;
+        failed = true;
+      };
+    }
   });
 </script>
 
