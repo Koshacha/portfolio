@@ -11,8 +11,9 @@
     venture, bringing my expertise to the table. I love cats and absolutely adore TypeScript.
   </p>
   <p class="text">
-    If you're not sure yet, I've been learning Spanish with Duolingo for <Duolingo />
-    days straight and I'm proud of it. Contact me so we can discuss your project as soon as possible.
+    My eternal mojo is is neat code and
+    <a class="link" href="https://nohello.net" rel="nofollow">nohello</a> in work chats, I hope you're
+    following it too. Feel free to contact me so we can discuss your project as soon as possible.
   </p>
   <Contacts />
 </div>
@@ -33,5 +34,9 @@
 
   .text {
     @apply text-neutral-300/90 leading-6 font-sans mb-3;
+  }
+
+  .link {
+    @apply text-cambridge_blue-400 underline;
   }
 </style>
