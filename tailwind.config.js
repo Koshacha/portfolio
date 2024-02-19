@@ -29,7 +29,8 @@ export default {
     fontFamily: {
       rocket: ['RocketFont', ...defaultTheme.fontFamily.sans],
       sans: ['Inconsolata', ...defaultTheme.fontFamily.sans],
-      gantari: ['Gantari', ...defaultTheme.fontFamily.sans]
+      gantari: ['Gantari', ...defaultTheme.fontFamily.sans],
+      borel: ['Borel', ...defaultTheme.fontFamily.sans],
     },
     colors: {
       transparent: 'transparent',

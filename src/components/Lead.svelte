@@ -5,14 +5,14 @@
 
 <div class="lead">
   <p class="subtitle">JavaScript Developer</p>
-  <h2 class="title">ilya mazunin</h2>
+  <h2 class="title">Ilya Mazunin</h2>
   <p class="text">
     Hey there, let's team up to build awesome apps together! I'm eager to become a player in your
     venture, bringing my expertise to the table. I love cats and absolutely adore TypeScript.
   </p>
   <p class="text">
     My eternal mojo is is neat code and
-    <a class="link" href="https://nohello.net" rel="nofollow">nohello</a> in work chats, I hope you're
+    <a class="link" href="https://nohello.net" rel="nofollow">nohello 🤓</a> in work chats, I hope you're
     following it too. Feel free to contact me so we can discuss your project as soon as possible.
   </p>
   <Contacts />
@@ -28,8 +28,8 @@
   }
 
   .title {
-    @apply bg-gradient-to-br from-cambridge_blue-400 to-cambridge_blue-700 bg-clip-text text-transparent mb-5 text-3xl font-bold
-     sm:text-5xl sm:leading-none font-rocket tracking-normal;
+    @apply bg-gradient-to-br from-cambridge_blue-400 to-cambridge_blue-200 bg-clip-text text-transparent text-3xl font-bold
+     sm:text-5xl sm:leading-none tracking-normal font-borel py-7 pb-4 sm:mb-0 relative lg:-left-10;
   }
 
   .text {
@@ -37,6 +37,6 @@
   }
 
   .link {
-    @apply text-cambridge_blue-400 underline;
+    @apply text-cambridge_blue-400 font-borel leading-none;
   }
 </style>
