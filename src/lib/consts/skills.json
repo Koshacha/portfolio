@@ -21,6 +21,10 @@
       "img": "/images/skills/redux.png"
     },
     {
+      "name": "Next.js",
+      "img": "/images/skills/next-js.png"
+    },
+    {
       "name": "MobX",
       "img": "/images/skills/mobx.png"
     },
@@ -88,6 +92,10 @@
     {
       "name": "d3.js",
       "img": "/images/skills/d3.webp"
+    },
+    {
+      "name": "Prisma ORM",
+      "img": "/images/skills/prisma.png"
     }
   ],
   "devops": [
