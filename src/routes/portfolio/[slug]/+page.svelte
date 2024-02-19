@@ -30,7 +30,9 @@
     </hgroup>
   </div>
 
-  <div class="prose prose-invert max-w-full">
+  <div
+    class="prose prose-invert prose-headings:font-rocket prose-a:text-reseda_green-600 max-w-full"
+  >
     <div class="post__tags">
       {#if data.meta?.stack?.length > 0}
         <Tags items={data.meta.stack} />
