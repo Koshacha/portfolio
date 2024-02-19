@@ -28,6 +28,6 @@
   }
 
   .button__skeleton {
-    @apply inline-block h-4 w-20 bg-neutral-800 animate-pulse rounded-md my-0;
+    @apply inline-block h-4 w-16 bg-neutral-800 animate-pulse rounded-md my-0 relative top-1;
   }
 </style>

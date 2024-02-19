@@ -1,6 +1,6 @@
 ---
 title: Photo Editor Mobile App
-description: React Native, MobX, 
+description: React Native, MobX,
 date: '2020-1-1'
 sort: 4
 categories:
@@ -10,8 +10,11 @@ stack:
   - mobx
 published: true
 wip: true
+emoji:
+  - 📸
+  - 🌇
 ---
 
 Hello there! 👋
 
-I will fill this page with a description of the project, code examples and screenshots later. 
+I will fill this page with a description of the project, code examples and screenshots later.
