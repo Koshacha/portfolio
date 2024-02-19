@@ -12,8 +12,14 @@ stack:
   - php
   - rest api!
 published: true
+emoji:
+  - 💼
+  - ✉️
+  - 📮
+  - 👩‍💻
+  - 👨‍💻
 ---
 
 Hello there! 👋
 
-I will fill this page with a description of the project, code examples and screenshots later. 
+I will fill this page with a description of the project, code examples and screenshots later.

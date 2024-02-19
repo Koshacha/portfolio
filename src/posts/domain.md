@@ -10,8 +10,21 @@ stack:
   - jQuery!
   - web scraping!
 published: true
+emoji:
+  - 🔍
+  - ⚡
 ---
 
-Hello there! 👋
+Quite an old project of mine that I created after graduating from university. The app was created using Electron, I used jQuery to animate the interface and Bootstrap was used for styling.
 
-I will fill this page with a description of the project, code examples and screenshots later. 
+## Purpose of the application
+
+The application accepts a list of domain names and checks their history in the Web Archive for errors, redirects.
+
+## Links
+
+- Git repository – [github.com/koshacha/domain-history-checker](https://github.com/koshacha/domain-history-checker)
+
+## Choosing Electron
+
+I wanted to learn the technology of creating desktop applications using JavaScript.

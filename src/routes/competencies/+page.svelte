@@ -39,7 +39,7 @@
     </div>
     <div class="col-span-2">
       <SkillsSection items={skills.devops}>
-        <span slot="title">devops</span>
+        <span slot="title">devops & other stuff</span>
       </SkillsSection>
     </div>
   </div>

@@ -1,10 +1,14 @@
 import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
+import { createHighlighter } from "@bitmachina/highlighter";
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-  extensions: ['.md']
+  extensions: ['.md'],
+  highlight: {
+    highlighter: await createHighlighter({ theme: "slack-dark" }),
+  }
 };
 
 /** @type {import('@sveltejs/kit').Config} */
