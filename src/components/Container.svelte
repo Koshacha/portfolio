@@ -13,7 +13,7 @@
 
 <style lang="postcss">
   .wrapper {
-    @apply max-w-2xl mx-4 lg:mx-auto;
+    @apply max-w-2xl mx-4 md:mx-auto;
   }
 
   .wrapper--fluid {
