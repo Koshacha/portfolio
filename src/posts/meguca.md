@@ -30,3 +30,7 @@ I visited the framework's website, went through the small tutorials provided on 
 ## Work Progress
 
 In the course of my work, I learned all the details of developing in Svelte, from simple components, to complex logic in +server.ts files. The posts on the site are generated from Markdown files, dynamic image optimization is set up, and the interface is full of simple but nice animations. I also got more familiar with Vite.
+
+## Images
+
+[You're already on this site, why do you need more screenshots?](https://en.wikipedia.org/wiki/Recursion) 🗿

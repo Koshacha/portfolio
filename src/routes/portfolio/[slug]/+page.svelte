@@ -1,14 +1,14 @@
 <script lang="ts">
   // import analyzeDate, { type DateInfo } from '$lib/utils/analyzeDate';
-  
-  import PostCoverEmoji from '../../../components/PostCoverEmoji.svelte'
+
+  import PostCoverEmoji from '../../../components/PostCoverEmoji.svelte';
   import Tags from '../../../components/Tags.svelte';
 
   export let data;
 
   $: formattedTitle = data.meta.title
     .split(' ')
-    .map((o, i) => !i ? `<span>${o}</span>` : o)
+    .map((o, i) => (!i ? `<span>${o}</span>` : o))
     .join(' ');
 
   // let date: DateInfo | undefined = data.meta.date ? analyzeDate(data.meta.date) : undefined;
@@ -55,7 +55,7 @@
   }
 
   .post__cover {
-    @apply w-full sm:bg-gradient-to-tr from-neutral-900 from-25% to-neutral-800 sm:h-28 border-neutral-800 sm:border-[1px] mb-6 sm:mb-12 md:relative rounded-sm;
+    @apply w-full sm:bg-gradient-to-tr from-neutral-900 from-25% to-neutral-800 sm:h-28 border-neutral-800 sm:border-[1px] mb-6 sm:mb-12 sm:relative rounded-sm;
   }
 
   .post__tags {

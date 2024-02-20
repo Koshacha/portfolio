@@ -23,14 +23,18 @@ emoji:
 
 <script>
   import DeferButton from '/src/components/DeferButton.svelte';
+  import Gallery from '/src/components/Gallery.svelte';
+  import image_1 from '/static/images/posts/dswp/image-1.jpg?format=webp';
+  import image_2 from '/static/images/posts/dswp/image-2.jpg?format=webp';
+  import image_3 from '/static/images/posts/dswp/image-3.jpg?format=webp';
 </script>
 
 Quite an interesting project I've been working on. Using React.js, I created a website that allows users to exchange cryptocurrency. The interface was created using Tailwind CSS, and communication with the backend is mostly done using Socket.io messaging. Also, the project has a pretty simple internationalization. In this project I only worked on Frontend and a little bit on DevOps.
 
 ## Links
 
-- Git repository - **not available due to NDA**
-- Website link – <DeferButton><a href="https://deswop.com" rel="noreferrer">deswop.com</a></DeferButton>
+- Git repository: **not available due to NDA**
+- Website link: <DeferButton><a href="https://deswop.com" rel="noreferrer">deswop.com</a></DeferButton>
 
 ## Choosing a React.js
 
@@ -58,17 +62,24 @@ And here are the outgoing messages. They are more complicated, because from the 
 
 I wrote the following code, which completely covered my needs in this typing and works just perfectly.
 
-```js
+```ts
 interface ServerToClientEvents {
   ticker: (message: SocketCurrenciesMessage | SocketExchangeRateMessage) => void;
   order: (res: OrderResponse) => void;
 }
 
 export interface ClientSocket extends Socket<ServerToClientEvents> {
-emit(event: 'order', type: 'currencies'): this;
-emit(event: 'order', type: 'order_data', dto: GetOrderDto): this;
-emit(event: 'order', type: 'change', dto: CreateOrderDto): this;
-emit(event: 'order', type: 'rate', dto: OrderRateDto): this;
+  emit(event: 'order', type: 'currencies'): this;
+  emit(event: 'order', type: 'order_data', dto: GetOrderDto): this;
+  emit(event: 'order', type: 'change', dto: CreateOrderDto): this;
+  emit(event: 'order', type: 'rate', dto: OrderRateDto): this;
 }
-
 ```
+
+## Images
+
+<Gallery
+className="sm:columns-2"
+images={[image_1, image_3, image_2]}
+alt={['exchange widget', 'payment page', 'advantages section']}
+/>

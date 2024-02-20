@@ -1,5 +1,5 @@
 ---
-title: Domain History Checker
+title: Domain History Explorer
 description: Electron, jQuery, Web Scraping
 date: '2020-1-1'
 sort: 0
@@ -15,7 +15,7 @@ emoji:
   - ⚡
 ---
 
-Quite an old project of mine that I created after graduating from university. The app was created using Electron, I used jQuery to animate the interface and Bootstrap was used for styling.
+Quite an old project of mine that I created after graduating from university. The app was created using Electron, I used jQuery to add interactivity to the interface and Bootstrap was used for styling.
 
 ## Purpose of the application
 
@@ -23,7 +23,7 @@ The application accepts a list of domain names and checks their history in the W
 
 ## Links
 
-- Git repository – [github.com/koshacha/domain-history-checker](https://github.com/koshacha/domain-history-checker)
+- Git repository: [github.com/koshacha/domain-history-checker](https://github.com/koshacha/domain-history-checker)
 
 ## Choosing Electron
 
