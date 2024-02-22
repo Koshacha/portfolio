@@ -15,7 +15,15 @@ export async function load({ params }) {
 }
 
 export const entries: EntryGenerator = () => {
-  return [{ slug: 'dswp' }, { slug: 'jobs' }];
+  const slugs = [];
+  const paths = import.meta.glob('/src/posts/*.md', { eager: true });
+
+  for (const path in paths) {
+    const slug = path.split('/').at(-1)?.replace('.md', '') as string;
+    slugs.push({ slug });
+  }
+
+  return slugs;
 };
 
 export const prerender = true;
