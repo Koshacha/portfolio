@@ -48,10 +48,10 @@
 
   .item {
     @apply transition-all py-2;
+  }
 
-    &:before {
-      @apply content-['#'] mr-0.5 text-tea_green align-middle;
-    }
+  .item::before {
+    @apply content-['#'] mr-0.5 text-tea_green align-middle;
   }
 
   .active {
