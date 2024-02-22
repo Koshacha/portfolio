@@ -1,14 +1,16 @@
 <script lang="ts">
   import SkillsSection from '../../components/SkillsSection.svelte';
+  import SEO from '../../components/SEO.svelte';
 
   export let data;
 
   let { skills } = data;
 </script>
 
-<svelte:head>
-  <title>Competencies & Skills</title>
-</svelte:head>
+<SEO
+  title="Competencies & Skills"
+  description="Let's discover my tech stack! Exploring a diverse set of tools and technologies curated by a frontend developer passionate about creating innovative web solutions. Dive into my skills today!"
+/>
 
 <div class="max-w-4xl mx-auto">
   <div class="flex flex-col gap-2 mb-20 md:mb-0 md:grid md:grid-cols-3 md:gap-3 md:mx-3">

@@ -1,6 +1,7 @@
 ---
 title: Domain History Explorer
 description: Electron, jQuery, Web Scraping
+seoDescription: 'The app was created using Electron, I used jQuery to add interactivity to the interface and Bootstrap was used for styling.'
 date: '2020-1-1'
 sort: 0
 categories:

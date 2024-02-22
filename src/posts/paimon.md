@@ -1,6 +1,7 @@
 ---
 title: Discord Bot
-description: Node.js, Nest.js, Google Firebase, Docker
+description: TypeScript, Node.js, Nest.js, Google Firebase, Docker
+seoDescription: Discord bot project utilizing Node.js, Nest.js, Google Firebase, and Docker.
 date: '2024-1-7'
 sort: 4
 categories:

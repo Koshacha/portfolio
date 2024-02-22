@@ -24,7 +24,7 @@
   }
 
   .icon :global(.icon__img) {
-    @apply h-9 w-9 object-contain grayscale-[0.6];
+    @apply h-9 w-9 rounded-sm object-contain grayscale-[0.6];
   }
 
   .icon :global(.icon__img__hovered) {

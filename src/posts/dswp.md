@@ -1,6 +1,6 @@
 ---
 title: Cryptocurrency Exchanger
-description: React.js, React Router, Type Script, Socket.IO, Docker
+description: React.js, React Router, TypeScript, Socket.IO, Docker
 date: '2023-10-10'
 sort: 5
 categories:
@@ -13,6 +13,7 @@ stack:
   - i18n!
 colspan: true
 published: true
+seoDescription: 'Cryptocurrency exchanger project featuring React.js, React Router, TypeScript, Socket.IO, and Docker for efficient exchange operations.'
 emoji:
   - 💴
   - 💵

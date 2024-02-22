@@ -1,6 +1,7 @@
 ---
 title: Marketplace Platform
 description: Next.js, RTK Query, WebSocket, Google Firebase Authentication, Docker
+seoDescription: 'Marketplace platform leveraging Next.js, RTK Query, WebSocket, Google Firebase Authentication, and Docker for seamless user experience.'
 date: '2023-6-1'
 sort: 5
 categories:

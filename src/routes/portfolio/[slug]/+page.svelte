@@ -2,6 +2,7 @@
   // import analyzeDate, { type DateInfo } from '$lib/utils/analyzeDate';
 
   import PostCoverEmoji from '../../../components/PostCoverEmoji.svelte';
+  import Seo from '../../../components/SEO.svelte';
   import Tags from '../../../components/Tags.svelte';
 
   export let data;
@@ -14,12 +15,7 @@
   // let date: DateInfo | undefined = data.meta.date ? analyzeDate(data.meta.date) : undefined;
 </script>
 
-<!-- SEO -->
-<svelte:head>
-  <title>{data.meta.title}</title>
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content={data.meta.title} />
-</svelte:head>
+<Seo title={data.meta.title} description={data.meta.seoDescription} type="article" />
 
 <article class="post">
   <div class="post__cover">

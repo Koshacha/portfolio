@@ -1,6 +1,7 @@
 ---
 title: Jobs Search Board
 description: Next.js, PHP, Rest API
+seoDescription: 'Jobs search board project involving Next.js, PHP, and Rest API. Explored GetResponse, SendGrid, and GoHighLevel for enhanced digital mailing functionalities'
 date: '2022-4-2'
 sort: 4
 categories:

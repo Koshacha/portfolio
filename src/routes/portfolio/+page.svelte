@@ -4,6 +4,7 @@
   import PortfolioFilter from '../../components/PortfolioFilter.svelte';
   import { flip } from 'svelte/animate';
   import cn from 'classnames';
+  import Seo from '../../components/SEO.svelte';
 
   export let data;
 
@@ -26,9 +27,10 @@
       : posts;
 </script>
 
-<svelte:head>
-  <title>Portfolio</title>
-</svelte:head>
+<Seo
+  title="Portfolio"
+  description="Explore my portfolio showcasing a dynamic tech stack. Experience the expertise of a frontend developer dedicated to innovative web solutions."
+/>
 
 <Portfolio>
   <PortfolioFilter items={categories} bind:selectedItems={selected} />

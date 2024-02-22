@@ -1,6 +1,7 @@
 ---
 title: Telephone DB Explorer
 description: React.js, PHP, MySQL
+seoDescription: An React.js SPA, which could be used to explore MySQL phone number database, make edits to it - for example, mark numbers as viewed and so on.
 date: '2020-1-1'
 sort: 1
 categories:
