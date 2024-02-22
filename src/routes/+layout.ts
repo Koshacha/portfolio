@@ -8,3 +8,5 @@ export const load = async ({ url }) => {
     url: url.pathname
   };
 };
+
+export const prerender = true;
