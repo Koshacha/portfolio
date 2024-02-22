@@ -1,4 +1,5 @@
 import { error } from '@sveltejs/kit';
+import type { EntryGenerator } from './$types';
 
 export async function load({ params }) {
   try {
@@ -12,3 +13,9 @@ export async function load({ params }) {
     throw error(404, `Could not find ${params.slug}`);
   }
 }
+
+export const entries: EntryGenerator = () => {
+  return [{ slug: 'dswp' }, { slug: 'jobs' }];
+};
+
+export const prerender = true;
