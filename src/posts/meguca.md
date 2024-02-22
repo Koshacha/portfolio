@@ -1,6 +1,7 @@
 ---
 title: This Site!
 description: Svelte, TypeScript
+seoDescription: 'Website on Svelte using SSG and TypeScript, to show the world my portfolio and gained experience as a frontend developer.'
 date: '2024-1-7'
 sort: 3
 categories:
