@@ -1,6 +1,7 @@
 <script lang="ts">
   import * as defaultConfig from '$lib/config';
   export let title: string = defaultConfig.title;
+  export let siteTitle: string = defaultConfig.siteTitle;
   export let description: string = defaultConfig.description;
   export let lang: string = defaultConfig.lang;
   export let image: string = defaultConfig.image;
@@ -17,4 +18,6 @@
   <meta property="og:title" content={title} />
   <meta property="og:type" content={type} />
   <meta property="og:image" content={image} />
+  <meta property="og:description" content={description} />
+  <meta property="og:site_name" content={siteTitle} />
 </svelte:head>
