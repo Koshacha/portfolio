@@ -20,7 +20,10 @@ const config = {
   preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 
   kit: {
-    adapter: adapter()
+    adapter: adapter(),
+    prerender: {
+      origin: 'https://hatsu.pro'
+    }
   }
 };
 
