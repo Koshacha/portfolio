@@ -1,5 +1,5 @@
 ---
-title: Jobs Search
+title: Jobs Search Board
 description: Next.js, PHP, Rest API
 date: '2022-4-2'
 sort: 4
@@ -30,20 +30,24 @@ emoji:
   import image_5 from '/static/images/posts/jobs/image-5.jpg?format=webp';
 </script>
 
-You are here! At some point I needed a place where I could make myself known, talk about my skills and projects, that's how this site came about. I chose Svelte as a framework and during the whole time of development I have never regretted it. The interface of the site was created traditionally with Tailwind CSS, for hosting I used Vercel.
+As part of this project, I developed a Next.js application with a PHP backend that provides users with a listing of employment opportunities. Talroo API and CareerJet API are used to retrieve the jobs. The users can filter the results by category, job location and by text query.
+
+The UI has been designed using Tailwind CSS.
 
 ## Links
 
 - Git repository: **not available due to NDA**
 - Website link: <DeferButton><a href="https://jobsandneeds.com" rel="noreferrer">jobsandneeds.com</a></DeferButton>
 
-## Choosing a Svelte/SvelteKit framework
+## Digital Mailing
 
-I visited the framework's website, went through the small tutorials provided on the site and I found this framework interesting. So, I decided to explore it more deeply and build a website on it. And man, I just love Svelte! It's easy to learn and presents an incredibly user-friendly development experience. I think it's perfect for building both simple and complex sites. It's a huge relief to come to Svelte after React.js and realize that you don't have to worry about things like memoizing components.
+In contact with Advertising Specialist, I got to learn about a lot of different services and integrations. With Apps Script, I organized the collection of leads from landing pages into a Google Sheets spreadsheet, and in the email sending services, I prepared and set up all the necessary scripts to work. I'll list all the integrations used below:
 
-## Work Progress
+- GetResponse is an online marketing platform that allows you to send email newsletters, create lendings, host webinars, etc., based in Poland.
+- SendGrid is a Denver, Colorado based customer communication platform for transactional and marketing emails.
+- GoHighLevel is a comprehensive software solution built to help you manage customer relationships, automate sales processes and improve lead generation efforts, all from a single platform.
 
-In the course of my work, I learned all the details of developing in Svelte, from simple components, to complex logic in +server.ts files. The posts on the site are generated from Markdown files, dynamic image optimization is set up, and the interface is full of simple but nice animations. I also got more familiar with Vite.
+Part of my job was also to improve the reputation of our domains for email services, reduce the risk of getting into the spam folder, and make users more likely to actually open emails.
 
 ## Images
 
