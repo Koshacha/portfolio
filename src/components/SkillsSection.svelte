@@ -25,11 +25,11 @@
 
 <style lang="postcss">
   .section {
-    @apply relative h-full px-5 py-2 pb-5 bg-night-300/30 border-[1px] border-neutral-700 rounded-sm;
+    @apply relative h-full px-4 py-4 pb-5 bg-gradient-to-r from-night-300/80 from-50% to-night-300/20 border-[1px] border-neutral-700 rounded-sm;
   }
 
   .section__title {
-    @apply mb-2 text-lg font-bold text-neutral-300;
+    @apply mb-3 text-lg font-bold text-neutral-300;
   }
 
   .section__content {
