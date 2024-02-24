@@ -10,6 +10,7 @@ stack:
   - node.js
   - nest.js
   - google firebase!
+  - github actions
   - docker!
 published: true
 emoji:
