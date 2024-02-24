@@ -1,7 +1,7 @@
 ---
 title: Discord Bot
 description: TypeScript, Node.js, Nest.js, Google Firebase, Docker
-seoDescription: Discord bot project utilizing Node.js, Nest.js, Google Firebase, and Docker.
+seoDescription: Discord bot project with Node.js, Nest.js, Google Firebase, and Docker.
 date: '2024-1-7'
 sort: 4
 categories:
@@ -10,6 +10,7 @@ stack:
   - node.js
   - nest.js
   - google firebase!
+  - github actions
   - docker!
 published: true
 emoji:
@@ -69,6 +70,8 @@ alt={['skillcheck', 'rating output, if we do not have enough messages on server'
 
 ## Launch the bot using docker compose
 
+First of all, you will need to create a docker-compose.yml file with the following contents:
+
 ```yaml
 name: paimon
 services:
@@ -98,3 +101,9 @@ GOOGLE_PRIVATE_KEY=""
 ```
 
 You'll need to get a Discord token and Google Firebase keys first, of course.
+
+All you have to do is run the application with the command:
+
+```bash
+docker-compose up -d
+```

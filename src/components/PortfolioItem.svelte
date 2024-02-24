@@ -8,7 +8,7 @@
 
   setTimeout(() => {
     loaded = true;
-  }, index * 150);
+  }, index * 60);
 
   let loaded = !animate;
   let hovered = false;

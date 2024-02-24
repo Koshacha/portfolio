@@ -11,7 +11,7 @@
     venture, bringing my expertise to the table. I love cats and absolutely adore TypeScript.
   </p>
   <p class="text">
-    My eternal mojo is is neat code and
+    My mojo is neat code and
     <a class="link" href="https://nohello.net" rel="nofollow">nohello 🤓</a> in work chats, I hope you're
     following it too. Feel free to contact me so we can discuss your project as soon as possible.
   </p>
