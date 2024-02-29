@@ -12,7 +12,7 @@
   let { posts, categories } = data.data;
   let selected: string[] = [];
 
-  let animate = $navigating?.to?.route.id === '/portfolio';
+  let animate = true;
 
   $: {
     if (selected.length > 0) animate = false;
