@@ -2,28 +2,24 @@
   import { fly } from 'svelte/transition';
   import type { Post } from '$lib/types';
   import sample from 'lodash.sample';
+  import { onMount } from 'svelte';
   export let post: Post | undefined = undefined;
   export let index = 0;
   export let animate = true;
 
-  setTimeout(() => {
-    loaded = true;
-  }, index * 60);
+  onMount(() => {
+    setTimeout(() => {
+      loaded = true;
+    }, index * 60);
+  });
 
   let loaded = !animate;
-  let hovered = false;
   let linkVariants = ['open', 'check', 'let`s see', 'checkout', 'go', 'read more'];
   $: linkText = sample(linkVariants);
 </script>
 
 {#if post && loaded}
-  <!-- svelte-ignore a11y-no-static-element-interactions -->
-  <div
-    class="card__inner"
-    transition:fly={{ y: -20 }}
-    on:mouseenter={() => (hovered = true)}
-    on:mouseleave={() => (hovered = false)}
-  >
+  <div class="card__inner group" transition:fly={{ y: -20 }}>
     <div class="card__body">
       <div class="flex items-center -mt-1">
         <h3 class="card__title">{post.title}</h3>
@@ -31,19 +27,18 @@
       <p class="card__description">
         {post.description}
       </p>
-      <a href="portfolio/{post.slug}" class="card__button card__button--mobile" in:fly={{ y: 10 }}>
+      <a href="/portfolio/{post.slug}" class="card__button card__button--mobile" in:fly={{ y: 10 }}>
         {linkText}
       </a>
-      {#if hovered}
-        {#if post.wip}
-          <span class="card__button card__button--disabled" in:fly={{ y: 10 }}>
-            currently in progress
-          </span>
-        {:else}
-          <a href="portfolio/{post.slug}" class="card__button" in:fly={{ y: 10 }}>
-            {linkText}
-          </a>
-        {/if}
+
+      {#if post.wip}
+        <span class="card__button card__button--disabled" in:fly={{ y: 10 }}>
+          currently in progress
+        </span>
+      {:else}
+        <a href="/portfolio/{post.slug}" class="card__button" in:fly={{ y: 10 }}>
+          {linkText}
+        </a>
       {/if}
     </div>
   </div>
@@ -63,7 +58,7 @@
   }
 
   .card__button {
-    @apply absolute bottom-2 right-4 text-xs font-medium text-celadon font-rocket invisible sm:visible;
+    @apply absolute bottom-2 right-4 text-xs font-medium text-celadon font-rocket opacity-0 group-hover:opacity-100 focus:opacity-100;
   }
 
   .card__button::before {
