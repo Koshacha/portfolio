@@ -8,8 +8,14 @@
   let hovered = false;
 </script>
 
-<!-- svelte-ignore a11y-no-static-element-interactions -->
-<div class="icon" on:mouseenter={() => (hovered = true)} on:mouseleave={() => (hovered = false)}>
+<div
+  class="icon"
+  tabindex="0"
+  on:mouseenter={() => (hovered = true)}
+  on:mouseleave={() => (hovered = false)}
+  on:focusin={() => (hovered = true)}
+  on:focusout={() => (hovered = false)}
+>
   {#if hovered}
     <Pop>{title}</Pop>
   {/if}
