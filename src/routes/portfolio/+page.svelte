@@ -5,13 +5,14 @@
   import Seo from '@/components/SEO.svelte';
   import { flip } from 'svelte/animate';
   import cn from 'classnames';
+  import { navigating } from '$app/stores';
 
   export let data;
 
   let { posts, categories } = data.data;
   let selected: string[] = [];
 
-  let animate = true;
+  let animate = $navigating?.to?.route.id === '/portfolio';
 
   $: {
     if (selected.length > 0) animate = false;
