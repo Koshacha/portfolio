@@ -7,7 +7,7 @@
 
   export let data;
 
-  $: formattedTitle = data.meta.title
+  $: formattedTitle = (data.meta.title as string)
     .split(' ')
     .map((o, i) => (!i ? `<span>${o}</span>` : o))
     .join(' ');
