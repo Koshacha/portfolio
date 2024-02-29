@@ -5,7 +5,6 @@
   import Seo from '@/components/SEO.svelte';
   import { flip } from 'svelte/animate';
   import cn from 'classnames';
-  import { navigating } from '$app/stores';
 
   export let data;
 
