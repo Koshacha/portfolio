@@ -15,6 +15,7 @@
     href: string;
     download?: boolean | string;
     lang?: 'ru' | 'en';
+    event?: string;
   };
 
   type LinkWithIcon = BasicLink & {
@@ -35,19 +36,23 @@
     [
       {
         href: 'https://t.me/Koshacha',
-        icon: faTelegram
+        icon: faTelegram,
+        event: 'contact-clicked'
       },
       {
         href: 'mailto:wuvuxd@proton.me',
-        icon: faAt
+        icon: faAt,
+        event: 'contact-clicked'
       },
       {
         href: 'https://discordapp.com/users/316173966827978755',
-        icon: faDiscord
+        icon: faDiscord,
+        event: 'contact-clicked'
       },
       {
         href: 'https://github.com/koshacha',
-        icon: faGithubAlt
+        icon: faGithubAlt,
+        event: 'contact-clicked'
       }
     ],
     [
@@ -56,22 +61,25 @@
         title: 'Download CV',
         download: 'Ilya-Mazunin-Frontend-Developer-CV.pdf',
         icon: faDownload,
+        event: 'cv-downloaded',
         iconed: false
       },
-      {
-        href: 'https://hh.ru/resume/df437b21ff045d40790039ed1f43325530646d',
-        title: 'HeadHunter'
-      },
+      // {
+      //   href: 'https://hh.ru/resume/df437b21ff045d40790039ed1f43325530646d',
+      //   title: 'HeadHunter'
+      // },
       {
         href: 'https://www.linkedin.com/in/ilya-mazunin/',
         title: 'LinkedIn',
         icon: faLinkedin,
+        event: 'linkedin-opened',
         iconed: false
       },
       {
         href: 'https://www.upwork.com/freelancers/~01355186bd65b2bf29',
         title: 'Upwork',
         icon: faUpwork,
+        event: 'upwork-opened',
         iconed: false
       }
     ]
@@ -83,7 +91,7 @@
     <div class="contacts__group">
       {#each linkGroup as link (link.href)}
         {#if hasIcon(link)}
-          <Link type="with-icon" href={link.href} icon={link.icon} />
+          <Link type="with-icon" href={link.href} icon={link.icon} event={link.event} />
         {:else}
           <Link
             type="simple"
@@ -91,6 +99,7 @@
             text={link.title}
             download={link.download}
             icon={link.icon}
+            event={link.event}
           />
         {/if}
       {/each}

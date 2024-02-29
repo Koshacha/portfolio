@@ -6,13 +6,14 @@
   export let type: 'with-icon' | 'simple' = 'simple';
   export let text = '';
   export let href = '';
+  export let event: string | undefined = undefined;
   export let icon: undefined | IconDefinition = undefined;
   export let download: boolean | string = false;
 
   $: classname = type === 'simple' ? 'button' : 'button_with-icon';
 </script>
 
-<a {href} {download} class={classname}>
+<a {href} {download} class={classname} data-umami-event={event}>
   {#if type === 'simple'}
     <FontAwesomeIcon class="text-neutral-300 w-6 !h-3" icon={icon ?? faLink} />
     {text}
