@@ -1,9 +1,9 @@
 <script lang="ts">
   // import analyzeDate, { type DateInfo } from '$lib/utils/analyzeDate';
 
-  import PostCoverEmoji from '../../../components/PostCoverEmoji.svelte';
-  import Seo from '../../../components/SEO.svelte';
-  import Tags from '../../../components/Tags.svelte';
+  import PostCoverEmoji from '@/components/PostCoverEmoji.svelte';
+  import Seo from '@/components/SEO.svelte';
+  import Tags from '@/components/Tags.svelte';
 
   export let data;
 

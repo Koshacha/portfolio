@@ -23,6 +23,10 @@ const config = {
     adapter: adapter(),
     prerender: {
       origin: 'https://hatsu.pro'
+    },
+    alias: {
+      '@/*': 'src/*',
+      'static/*': 'static/*'
     }
   }
 };

@@ -1,6 +1,6 @@
 <script lang="ts">
-  import SkillsSection from '../../components/SkillsSection.svelte';
-  import SEO from '../../components/SEO.svelte';
+  import SkillsSection from '@/components/SkillsSection.svelte';
+  import SEO from '@/components/SEO.svelte';
 
   export let data;
 

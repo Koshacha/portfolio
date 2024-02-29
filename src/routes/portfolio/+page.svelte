@@ -1,10 +1,11 @@
 <script lang="ts">
-  import Portfolio from '../../components/Portfolio.svelte';
-  import PortfolioItem from '../../components/PortfolioItem.svelte';
-  import PortfolioFilter from '../../components/PortfolioFilter.svelte';
+  import Portfolio from '@/components/Portfolio.svelte';
+  import PortfolioItem from '@/components/PortfolioItem.svelte';
+  import PortfolioFilter from '@/components/PortfolioFilter.svelte';
+  import Seo from '@/components/SEO.svelte';
+
   import { flip } from 'svelte/animate';
   import cn from 'classnames';
-  import Seo from '../../components/SEO.svelte';
 
   export let data;
 
