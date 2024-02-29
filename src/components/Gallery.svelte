@@ -6,7 +6,7 @@
   export let images: string[] = [];
   export let alt: string[] = [];
   export let className: string = 'columns-2 sm:columns-2';
-  let gallery: HTMLElement = null;
+  let gallery: HTMLElement | null = null;
 
   onMount(() => {
     if (alt.length < images.length) {

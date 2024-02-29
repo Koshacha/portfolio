@@ -1,17 +1,16 @@
 <script>
-  import '../app.css';
-  import { scale, fade, fly } from 'svelte/transition';
-  import Header from '../components/Header.svelte';
-  import Footer from '../components/Footer.svelte';
-  import { onMount } from 'svelte';
+  import '@/app.css';
   import '@fortawesome/fontawesome-svg-core/styles.css';
+  import Header from '@/components/Header.svelte';
+  import Footer from '@/components/Footer.svelte';
+  import JobStatus from '@/components/JobStatus.svelte';
+  import Container from '@/components/Container.svelte';
+  import { onMount } from 'svelte';
   import { config } from '@fortawesome/fontawesome-svg-core';
+  import { scale, fade, fly } from 'svelte/transition';
   import { page } from '$app/stores';
-  import JobStatus from '../components/JobStatus.svelte';
-  config.autoAddCss = false;
-  import * as globalConfig from '$lib/config';
-  import Container from '../components/Container.svelte';
 
+  config.autoAddCss = false;
   export let data;
 
   $: footerShown = false;

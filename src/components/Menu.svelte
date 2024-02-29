@@ -9,24 +9,27 @@
     {
       label: 'portfolio',
       alternativeLabel: 'back to portfolio page',
-      href: '/portfolio'
+      href: '/portfolio',
+      event: 'portfolio-page-opened'
     },
     {
       label: '<span class="hidden sm:inline">competencies and </span>skills',
-      href: '/competencies'
+      href: '/competencies',
+      event: 'skills-page-opened'
     }
   ];
 </script>
 
 <nav>
   <div class="menu">
-    {#each links as { label, href, alternativeLabel }, index (index)}
+    {#each links as { label, href, alternativeLabel, event }, index (index)}
       <a
         class="item"
         class:back={$page.url.pathname.startsWith(href) &&
           $page.url.pathname !== href &&
           alternativeLabel}
         class:active={$page.url.pathname === href}
+        data-umami-event={event}
         {href}
       >
         {#if alternativeLabel}

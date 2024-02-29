@@ -32,7 +32,7 @@ This is my first serious non-study project on Node.js as a backend developer. I 
 ## Links
 
 - Git repository: [github.com/koshacha/paimon-nestjs](https://github.com/koshacha/paimon-nestjs)
-- Bot link: <DeferButton>I'll add it later</DeferButton>
+- Bot link: <DeferButton>[invite bot](https://discord.com/oauth2/authorize?client_id=1121418492097343589&permissions=275012176976&scope=bot)</DeferButton>
 
 As the main library for dealing with Discord.js with Nest.js I used [this one](https://github.com/necordjs/necord).
 
