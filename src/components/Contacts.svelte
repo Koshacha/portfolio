@@ -2,21 +2,33 @@
   import Link from './Link.svelte';
   import { type IconDefinition } from '@fortawesome/free-regular-svg-icons';
 
-  import { faAt } from '@fortawesome/free-solid-svg-icons';
-  import { faDiscord, faGithubAlt, faTelegram } from '@fortawesome/free-brands-svg-icons';
+  import { faAt, faDownload } from '@fortawesome/free-solid-svg-icons';
+  import {
+    faDiscord,
+    faGithubAlt,
+    faTelegram,
+    faLinkedin,
+    faUpwork
+  } from '@fortawesome/free-brands-svg-icons';
 
-  type LinkWithIcon = {
-    icon: IconDefinition;
+  type BasicLink = {
     href: string;
+    download?: boolean | string;
+    lang?: 'ru' | 'en';
   };
 
-  type SimpleLink = {
+  type LinkWithIcon = BasicLink & {
+    icon: IconDefinition;
+  };
+
+  type SimpleLink = BasicLink & {
     title: string;
-    href: string;
+    icon?: IconDefinition;
+    iconed?: boolean;
   };
 
   function hasIcon(l: LinkWithIcon | SimpleLink): l is LinkWithIcon {
-    return 'icon' in l;
+    return !('iconed' in l && l.iconed === false) && 'icon' in l;
   }
 
   let links: Array<LinkWithIcon | SimpleLink>[] = [
@@ -40,16 +52,27 @@
     ],
     [
       {
+        href: '/cv.pdf',
+        title: 'Download CV',
+        download: 'Ilya-Mazunin-Frontend-Developer-CV.pdf',
+        icon: faDownload,
+        iconed: false
+      },
+      {
         href: 'https://hh.ru/resume/df437b21ff045d40790039ed1f43325530646d',
-        title: 'HeadHunter CV'
+        title: 'HeadHunter'
       },
       {
         href: 'https://www.linkedin.com/in/ilya-mazunin/',
-        title: 'LinkedIn'
+        title: 'LinkedIn',
+        icon: faLinkedin,
+        iconed: false
       },
       {
         href: 'https://www.upwork.com/freelancers/~01355186bd65b2bf29',
-        title: 'Upwork'
+        title: 'Upwork',
+        icon: faUpwork,
+        iconed: false
       }
     ]
   ];
@@ -62,7 +85,13 @@
         {#if hasIcon(link)}
           <Link type="with-icon" href={link.href} icon={link.icon} />
         {:else}
-          <Link type="simple" href={link.href} text={link.title} />
+          <Link
+            type="simple"
+            href={link.href}
+            text={link.title}
+            download={link.download}
+            icon={link.icon}
+          />
         {/if}
       {/each}
     </div>

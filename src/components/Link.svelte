@@ -7,13 +7,14 @@
   export let text = '';
   export let href = '';
   export let icon: undefined | IconDefinition = undefined;
+  export let download: boolean | string = false;
 
   $: classname = type === 'simple' ? 'button' : 'button_with-icon';
 </script>
 
-<a {href} class={classname}>
+<a {href} {download} class={classname}>
   {#if type === 'simple'}
-    <FontAwesomeIcon class="text-neutral-300 w-6 !h-3" icon={faLink} />
+    <FontAwesomeIcon class="text-neutral-300 w-6 !h-3" icon={icon ?? faLink} />
     {text}
   {:else}
     <FontAwesomeIcon class="w-4 !h-5 mr-1" {icon} />
