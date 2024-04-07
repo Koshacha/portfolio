@@ -6,6 +6,9 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        auto: 'repeat(auto-fill, minmax(55px, 1fr))'
+      },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-6deg)' },
@@ -30,7 +33,7 @@ export default {
       rocket: ['RocketFont', ...defaultTheme.fontFamily.sans],
       sans: ['Inconsolata', ...defaultTheme.fontFamily.sans],
       gantari: ['Gantari', ...defaultTheme.fontFamily.sans],
-      borel: ['Borel', ...defaultTheme.fontFamily.sans],
+      borel: ['Borel', ...defaultTheme.fontFamily.sans]
     },
     colors: {
       transparent: 'transparent',
