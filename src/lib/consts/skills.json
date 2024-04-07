@@ -86,6 +86,10 @@
       "img": "/images/skills/react-js.png"
     },
     {
+      "name": "Astro",
+      "img": "/images/skills/astro.png"
+    },
+    {
       "name": "Vue",
       "img": "/images/skills/vue.png"
     },

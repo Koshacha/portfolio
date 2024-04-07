@@ -32,8 +32,12 @@
     @apply mb-3 text-lg font-bold text-neutral-300;
   }
 
-  .section__content {
+  /* .section__content {
     @apply flex flex-wrap items-center gap-2;
+  } */
+
+  .section__content {
+    @apply grid grid-cols-auto gap-2 place-items-center;
   }
 
   .section__text {
