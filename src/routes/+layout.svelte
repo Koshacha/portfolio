@@ -9,6 +9,7 @@
   import { config } from '@fortawesome/fontawesome-svg-core';
   import { scale, fade, fly } from 'svelte/transition';
   import { page } from '$app/stores';
+  import Bouncer from '@/components/Bouncer.svelte';
 
   config.autoAddCss = false;
   export let data;
@@ -34,6 +35,7 @@
     </Container>
   {/key}
 </main>
+<Bouncer />
 {#if $page.url.pathname === '/'}
   <div class="top-bar" in:fly={{ y: -100, duration: 800 }} out:fly={{ y: -50, duration: 1200 }}>
     <JobStatus />
