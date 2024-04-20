@@ -20,7 +20,6 @@
 
   onMount(() => {
     coords.set({ x: wWidth / 2, y: wHeight / 2 });
-    hidden = false;
   });
 </script>
 
@@ -30,6 +29,7 @@
 <svelte:body
   on:mousemove={(e) => {
     coords.set({ x: e.clientX, y: e.clientY });
+    hidden = false;
   }}
   on:mouseleave={(e) => (hidden = true)}
   on:mouseenter={(e) => (hidden = false)}
