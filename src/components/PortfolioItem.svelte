@@ -27,9 +27,6 @@
       <p class="card__description">
         {post.description}
       </p>
-      <a href="/portfolio/{post.slug}" class="card__button card__button--mobile" in:fly={{ y: 10 }}>
-        {linkText}
-      </a>
 
       {#if post.wip}
         <span class="card__button card__button--disabled" in:fly={{ y: 10 }}>
@@ -58,7 +55,7 @@
   }
 
   .card__button {
-    @apply absolute bottom-2 right-4 text-xs font-medium text-celadon font-rocket opacity-0 group-hover:opacity-100 focus:opacity-100;
+    @apply absolute bottom-2 right-4 text-xs font-medium text-celadon font-rocket lg:opacity-0 group-hover:opacity-100 focus:opacity-100;
   }
 
   .card__button::before {
