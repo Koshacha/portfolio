@@ -15,15 +15,7 @@
   export let data;
 
   $: footerShown = false;
-  onMount(() => {
-    document.addEventListener('scroll', function () {
-      let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-      const height = document.body.scrollHeight;
-
-      footerShown = currentScroll + window.innerHeight * 0.7 > height * 0.7;
-    });
-  });
-
+  
   let windowWidth: number;
 </script>
 
