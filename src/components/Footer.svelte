@@ -8,8 +8,8 @@
 <footer class="footer" in:fly={{ y: 50 }} out:fly={{ y: 50 }}>
   <Container>
     <div class="text">
-      made with <FontAwesomeIcon class="text-[#ff6962] w-4 h-4" {icon} /> on
-      <span></span> svelte
+      hewwo <FontAwesomeIcon class="text-[#ff6962] w-4 h-4" {icon} />
+      <span></span>
     </div>
   </Container>
 </footer>

@@ -7,7 +7,7 @@
   }[];
 </script>
 
-<div class="section">
+<div class="section noize">
   <div class="section__title">
     <slot name="title" />
   </div>
@@ -29,7 +29,7 @@
   }
 
   .section__title {
-    @apply mb-3 text-lg font-bold text-neutral-300;
+    @apply mb-3 text-lg font-bold text-neutral-300 leading-none;
   }
 
   /* .section__content {
