@@ -53,7 +53,7 @@
   }
 
   .item::before {
-    @apply content-['#'] mr-0.5 text-tea_green align-middle;
+    @apply content-['#'] mr-0.5 text-tea_green align-middle font-rocket;
   }
 
   .active {

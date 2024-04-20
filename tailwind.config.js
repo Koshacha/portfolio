@@ -31,7 +31,7 @@ export default {
     },
     fontFamily: {
       rocket: ['RocketFont', ...defaultTheme.fontFamily.sans],
-      sans: ['Inconsolata', ...defaultTheme.fontFamily.sans],
+      sans: ['Mukta', ...defaultTheme.fontFamily.sans],
       gantari: ['Gantari', ...defaultTheme.fontFamily.sans],
       borel: ['Borel', ...defaultTheme.fontFamily.sans]
     },

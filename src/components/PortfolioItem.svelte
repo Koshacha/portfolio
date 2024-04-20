@@ -19,7 +19,7 @@
 </script>
 
 {#if post && loaded}
-  <div class="card__inner group" transition:fly={{ y: -20 }}>
+  <div class="card__inner group noize" transition:fly={{ y: -20 }}>
     <div class="card__body">
       <div class="flex items-center -mt-1">
         <h3 class="card__title">{post.title}</h3>

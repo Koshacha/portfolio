@@ -1,6 +1,6 @@
 <script lang="ts">
   // import analyzeDate, { type DateInfo } from '$lib/utils/analyzeDate';
-
+  import { goto } from '$app/navigation';
   import PostCoverEmoji from '@/components/PostCoverEmoji.svelte';
   import Seo from '@/components/SEO.svelte';
   import Tags from '@/components/Tags.svelte';
@@ -13,7 +13,15 @@
     .join(' ');
 
   // let date: DateInfo | undefined = data.meta.date ? analyzeDate(data.meta.date) : undefined;
+
+  function keyPressHandler(e: KeyboardEvent) {
+    if (e.key === 'q') {
+      goto('/portfolio');
+    }
+  }
 </script>
+
+<svelte:document on:keypress={keyPressHandler} />
 
 <Seo title={data.meta.title} description={data.meta.seoDescription} type="article" />
 
