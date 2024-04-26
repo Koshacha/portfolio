@@ -25,6 +25,10 @@
       "img": "/images/skills/next-js.png"
     },
     {
+      "name": "Astro",
+      "img": "/images/skills/astro.png"
+    },
+    {
       "name": "Redux",
       "img": "/images/skills/redux.png"
     },
@@ -84,10 +88,6 @@
     {
       "name": "React Native",
       "img": "/images/skills/react-js.png"
-    },
-    {
-      "name": "Astro",
-      "img": "/images/skills/astro.png"
     },
     {
       "name": "Vue",
