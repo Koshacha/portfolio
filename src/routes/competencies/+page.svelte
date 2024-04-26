@@ -15,8 +15,8 @@
 <div class="max-w-4xl mx-auto">
   <div class="flex flex-col gap-2 mb-20 md:mb-0 md:grid md:grid-cols-3 md:gap-3 md:mx-3">
     <div class="col-span-2">
-      <SkillsSection items={skills.frontend}>
-        <span slot="title">frontend</span>
+      <SkillsSection gradientClass="bg-gradient-to-br" items={skills.frontend}>
+        <span slot="title">Frontend</span>
       </SkillsSection>
     </div>
     <!-- <div class="row-span-3">
@@ -25,8 +25,8 @@
       </SkillsSection>
     </div> -->
     <div class="row-span-3 -order-10 md:order-[unset]">
-      <SkillsSection items={skills.learning}>
-        <span slot="title">things I'm learning</span>
+      <SkillsSection gradientClass="bg-gradient-to-l" items={skills.learning}>
+        <span slot="title">Studying in progress</span>
         <span slot="text">
           Studying popular tools that I might have missed before. Right now I am also interested in
           <a href="https://web3js.readthedocs.io/en/v1.10.0/" rel="nofollow">Web3</a> and I think that
@@ -35,13 +35,13 @@
       </SkillsSection>
     </div>
     <div class="col-span-2">
-      <SkillsSection items={skills.backend}>
-        <span slot="title">backend</span>
+      <SkillsSection gradientClass="bg-gradient-to-r" items={skills.backend}>
+        <span slot="title">Backend</span>
       </SkillsSection>
     </div>
     <div class="col-span-2">
-      <SkillsSection items={skills.devops}>
-        <span slot="title">devops & other stuff</span>
+      <SkillsSection gradientClass="bg-gradient-to-tr" items={skills.devops}>
+        <span slot="title">Ooh, and these things, too</span>
       </SkillsSection>
     </div>
   </div>
