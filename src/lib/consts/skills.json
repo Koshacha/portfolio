@@ -17,6 +17,10 @@
       "img": "/images/skills/vue.png"
     },
     {
+      "name": "Pinia",
+      "img": "/images/skills/pinia.svg"
+    },
+    {
       "name": "Svelte",
       "img": "/images/skills/svelte.png"
     },
