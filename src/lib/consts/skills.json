@@ -13,6 +13,10 @@
       "img": "/images/skills/css.png"
     },
     {
+      "name": "Vue",
+      "img": "/images/skills/vue.png"
+    },
+    {
       "name": "Svelte",
       "img": "/images/skills/svelte.png"
     },
@@ -23,6 +27,10 @@
     {
       "name": "Next.js",
       "img": "/images/skills/next-js.png"
+    },
+    {
+      "name": "Astro",
+      "img": "/images/skills/astro.png"
     },
     {
       "name": "Redux",
@@ -84,14 +92,6 @@
     {
       "name": "React Native",
       "img": "/images/skills/react-js.png"
-    },
-    {
-      "name": "Astro",
-      "img": "/images/skills/astro.png"
-    },
-    {
-      "name": "Vue",
-      "img": "/images/skills/vue.png"
     },
     {
       "name": "Nuxt.js",
