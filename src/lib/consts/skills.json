@@ -17,6 +17,10 @@
       "img": "/images/skills/vue.png"
     },
     {
+      "name": "Nuxt.js",
+      "img": "/images/skills/nuxtjs.png"
+    },
+    {
       "name": "Pinia",
       "img": "/images/skills/pinia.svg"
     },
@@ -94,12 +98,8 @@
   "soft": [],
   "learning": [
     {
-      "name": "React Native",
-      "img": "/images/skills/react-js.png"
-    },
-    {
-      "name": "Nuxt.js",
-      "img": "/images/skills/nuxtjs.png"
+      "name": "GSAP",
+      "img": "/images/skills/gsap.png"
     },
     {
       "name": "d3.js",
