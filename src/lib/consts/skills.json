@@ -69,6 +69,10 @@
       "img": "/images/skills/tailwind.png"
     },
     {
+      "name": "UnoCSS",
+      "img": "/images/skills/unocss.png"
+    },
+    {
       "name": "styled components",
       "img": "/images/skills/styled-components.webp"
     },
@@ -100,6 +104,10 @@
     {
       "name": "GSAP",
       "img": "/images/skills/gsap.png"
+    },
+    {
+      "name": "Shopify",
+      "img": "/images/skills/shopify.webp"
     },
     {
       "name": "d3.js",

@@ -57,7 +57,7 @@
     ],
     [
       {
-        href: '/cv.pdf',
+        href: '/cv-ilya-mazunin-vue.pdf',
         title: 'Download CV',
         download: 'Ilya-Mazunin-Frontend-Developer-CV.pdf',
         icon: faDownload,
