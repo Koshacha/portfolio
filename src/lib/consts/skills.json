@@ -146,6 +146,10 @@
     {
       "name": "Vercel",
       "img": "/images/skills/vercel.jpeg"
+    },
+    {
+      "name": "Sentry",
+      "img": "/images/skills/sentry.jpeg"
     }
   ]
 }
