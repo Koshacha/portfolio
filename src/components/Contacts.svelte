@@ -45,11 +45,6 @@
         event: 'contact-clicked'
       },
       {
-        href: 'https://discordapp.com/users/316173966827978755',
-        icon: faDiscord,
-        event: 'contact-clicked'
-      },
-      {
         href: 'https://github.com/koshacha',
         icon: faGithubAlt,
         event: 'contact-clicked'
@@ -65,11 +60,11 @@
         iconed: false
       },
       // {
-      //   href: 'https://hh.ru/resume/df437b21ff045d40790039ed1f43325530646d',
+      //   href: 'https://novosibirsk.hh.ru/resume/df437b21ff045d40790039ed1f43325530646d',
       //   title: 'HeadHunter'
       // },
       {
-        href: 'https://www.linkedin.com/in/ilya-mazunin/',
+        href: 'https://www.linkedin.com/in/koshacha',
         title: 'LinkedIn',
         icon: faLinkedin,
         event: 'linkedin-opened',
